@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Student Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required><br/><br/>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select><br><br>
+
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" ></textarea><br><br>
+
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required><br><br>
+        </fieldset>
+
+        <button type="submit">Register</button>
+        <button type="button" onclick="cancelRegistration()">Cancel</button>
+    </form>
+
+    <script>
+        function cancelRegistration() {
+            // You can add your cancel logic here
+            alert('Registration cancelled!');
+        }
+    </script>
+</body>
+</html>
